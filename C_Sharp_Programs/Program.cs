@@ -20,7 +20,9 @@ namespace C_Sharp_Programs
 
             int sum = num1 + num2;
 
-            Console.WriteLine($"The Sum is:{sum}");
+            Console.WriteLine($"The Sum is:{sum}");//string interpolation
+            Console.WriteLine("First number is:{0} and Second number is:{1}", num1, num2);//Placeholder
+            Console.WriteLine("First number is:" + num1 + " and Second number is:" + num2);//Concatenation
 
             Console.ReadLine();
 
