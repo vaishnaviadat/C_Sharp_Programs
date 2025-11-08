@@ -24,7 +24,7 @@ namespace C_Sharp_Programs
                 }
                 else if(pay_amount > 10000 && pay_mode == "card")
                 {
-                    Console.WriteLine("payment amount more the 10000 and discount:15%");
+                    Console.WriteLine("payment amount more than 10000 and discount:15%");
                 }
                 else if ((pay_amount < 10000 || pay_amount == 10000 ) && (pay_mode == "any"))
                 {
