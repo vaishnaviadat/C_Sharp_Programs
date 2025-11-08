@@ -20,7 +20,7 @@ namespace C_Sharp_Programs
                 string pay_mode=Console.ReadLine();
                 if(pay_amount>10000 && pay_mode=="cash" )
                 {
-                    Console.WriteLine("payment amount more than 10000 and discount:20%");
+                    Console.WriteLine("payment amount more th 10000 and discount:20%");
                 }
                 else if(pay_amount > 10000 && pay_mode == "card")
                 {
