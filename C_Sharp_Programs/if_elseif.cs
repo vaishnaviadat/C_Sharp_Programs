@@ -10,48 +10,52 @@ namespace C_Sharp_Programs
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter customer type:");
+            Console.WriteLine("Enter customer type(premium/Regular):");
             string Cust_type=Console.ReadLine();
             if(Cust_type == "premium")
             {
                 Console.WriteLine("Enter payment amount:");
                 int pay_amount=int.Parse(Console.ReadLine());
-                Console.WriteLine("Enter pay_mode:");
+                Console.WriteLine("Enter pay_mode(cash/card/any):");
                 string pay_mode=Console.ReadLine();
-                if(pay_amount>10000 && pay_mode=="cash" )
+                if(pay_amount>=10000 && pay_mode=="cash" )
                 {
-                    Console.WriteLine("payment amount more than 10000 and discount:20%");
+                    Console.WriteLine("your discount is:20%");
                 }
-                else if(pay_amount > 10000 && pay_mode == "card")
+                else if(pay_amount >=10000 && pay_mode == "card")
                 {
-                    Console.WriteLine("payment amount more than 10000 and discount:15%");
+                    Console.WriteLine("your discount is:15%");
                 }
-                else if ((pay_amount < 10000 || pay_amount == 10000 ) && (pay_mode == "any"))
+                else if ((pay_amount <= 10000 || pay_amount == 10000 ) && (pay_mode == "any"))
                 {
-                    Console.WriteLine(" payment amount 10000 or less and discount:10%");
+                    Console.WriteLine(" your discount is:10%");
                 }
             }
-            else 
+            else if(Cust_type == "regular")
             {
                 Console.WriteLine("Enter payment amount:");
                 int pay_amount = int.Parse(Console.ReadLine());
-                Console.WriteLine("Enter pay_mode:");
+                Console.WriteLine("Enter pay_mode(cash/card/any):");
                 string pay_mode =(Console.ReadLine());
-                if (pay_amount > 5000 && pay_mode == "cash")
+                if (pay_amount >=5000 && pay_mode == "cash")
                 {
-                    Console.WriteLine("payment amount more than 5000 and discount:5%");
+                    Console.WriteLine("your discount is:5%");
                 }
-                else if (pay_amount > 5000 && pay_mode == "card")
+                else if (pay_amount >=5000 && pay_mode == "card")
                 {
-                    Console.WriteLine("payment amount more than 5000 and discount:3%");
+                    Console.WriteLine("Your discount is:3%");
                 }
-                else if ((pay_amount < 5000 || pay_amount == 5000) &&(pay_mode == "any"))
+                else if ((pay_amount <= 5000 || pay_amount == 5000) &&(pay_mode == "any"))
                 {
-                    Console.WriteLine(" payment amount 5000 or less and discount:no");
+                    Console.WriteLine(" Your discount is:no discount");
                 }
 
             }
-            Console.ReadLine();
+            else
+            {
+                Console.WriteLine("Invalid");
+            }
+                Console.ReadLine();
         }
     }
 }

@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>C_Sharp_Programs.Switch_Case</StartupObject>
+    <StartupObject>C_Sharp_Programs.if_elseif</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
