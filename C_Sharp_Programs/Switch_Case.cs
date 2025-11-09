@@ -30,24 +30,35 @@ namespace C_Sharp_Programs
             //        break;
                 
             //}
-            Console.WriteLine("Enter Your Pizza(corn,vegatable,superme)");
+            Console.WriteLine("Enter Your Pizza(corn,vegatable,supreme)");
             string pizza=Console.ReadLine();
             switch(pizza)
             {
                 case "corn":
                     Console.WriteLine("you are selecting corn");
                     break;
-                case "superme":
-                    Console.WriteLine("you are selecting superme");
+                case "supreme":
+                    Console.WriteLine("you are selecting supreme");
                     break;
                 case "vegatable":
-                    Console.WriteLine("which vegatable type?");
-                    switch("vegatable")
+                    Console.WriteLine("which vegatable type pizza?");
+                    string vegatable=Console.ReadLine();
+                    switch (vegatable)
                     {
-                        case "onion":Console.WriteLine("selected");
+                        case "onion":Console.WriteLine("selected onion pizza");
                             break;
-
+                        case "capcicum":
+                            Console.WriteLine("selected capcicum pizza ");
+                            break;
+                        case "olives":
+                            Console.WriteLine("selected olives pizza");
+                            break;
+                        default:
+                            Console.WriteLine("wrong choice");
+                            break;
                     }
+                    break;
+                 default:Console.WriteLine("wrong choice");
                     break;
             }
             Console.ReadLine();
