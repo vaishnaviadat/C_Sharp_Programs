@@ -30,6 +30,10 @@ namespace C_Sharp_Programs
                 {
                     Console.WriteLine(" your discount is:10%");
                 }
+                else
+                {
+                    Console.WriteLine("Invalid customer type");
+                }
             }
             else if(Cust_type == "regular")
             {
@@ -49,7 +53,10 @@ namespace C_Sharp_Programs
                 {
                     Console.WriteLine(" Your discount is:no discount");
                 }
-
+                else
+                {
+                    Console.WriteLine("Invalid customer type");
+                }
             }
             else
             {
