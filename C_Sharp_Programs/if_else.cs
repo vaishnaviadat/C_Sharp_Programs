@@ -47,12 +47,12 @@ namespace C_Sharp_Programs
             //    Console.WriteLine("wrong credital");
             //}
             Console.WriteLine("Enter number:");
-            int num1=int.Parse(Console.ReadLine());
-            if(num1>0)
+            int num1 = int.Parse(Console.ReadLine());
+            if (num1 > 0)
             {
                 Console.WriteLine("Positive number");
             }
-            else if(num1<0)
+            else if (num1 < 0)
             {
                 Console.WriteLine("Negative  number");
             }
@@ -60,8 +60,10 @@ namespace C_Sharp_Programs
             {
                 Console.WriteLine("netural");
             }
-                Console.ReadLine();
+            Console.ReadLine();
         }
 
     }
+
 }
+
