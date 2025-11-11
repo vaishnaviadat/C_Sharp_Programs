@@ -43,12 +43,25 @@ namespace C_Sharp_Programs
             //    Console.WriteLine(i);
             //}
 
-            object[] obj = { "vaishna", 106, 99.99, true };
-            Console.WriteLine("mixed array:");
-            for(int i=0;i<obj.Length; i++)
-            {
-                Console.WriteLine(obj[i]);
-            }
+            //object[] obj = { "vaishna", 106, 99.99, true };
+            //Console.WriteLine("mixed array:");
+            //for(int i=0;i<obj.Length; i++)
+            //{
+            //    Console.WriteLine(obj[i]);
+            //}
+
+
+            //Multidimentional  Array
+            //int[,] arr = { { 1, 2, 3 }, { 4, 5, 6 }, { 7,8,9} };
+            //Console.WriteLine("Multidimentional Array:");
+            //for(int i=0;i<3;i++)
+            //{
+            //    for(int j=0;j<3;j++)
+            //    {
+            //        Console.Write(arr[i,j] + "\t");
+            //    }
+            //    Console.WriteLine();
+            //}
 
             Console.ReadLine();
         }
