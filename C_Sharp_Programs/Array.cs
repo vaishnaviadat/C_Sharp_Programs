@@ -63,8 +63,34 @@ namespace C_Sharp_Programs
             //    Console.WriteLine();
             //}
 
+
+            Console.WriteLine("Enter 2 Students Marks:");
+            int[,] mark = new int[2, 3]; // 2 students, 3 subjects each
+
+            // Input marks
+            for (int i = 0; i < 2; i++)
+            {
+                Console.WriteLine($"\nStudent {i + 1}:");
+                for (int j = 0; j < 3; j++)
+                {
+                    Console.Write($"Enter Marks {j + 1}: ");
+                    mark[i, j] = int.Parse(Console.ReadLine());
+                }
+            }
+
+            // Display marks
+            Console.WriteLine("\nMarks entered:");
+            for (int i = 0; i < 2; i++)
+            {
+                Console.WriteLine($"\nStudent {i + 1}:");
+                for (int j = 0; j < 3; j++)
+                {
+                    Console.WriteLine($"Subject {j + 1}: {mark[i, j]}");
+                }
+            }
+
             Console.ReadLine();
         }
-        
     }
 }
+
