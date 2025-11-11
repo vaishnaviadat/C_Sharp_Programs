@@ -17,6 +17,7 @@ namespace C_Sharp_Programs
             //    Console.WriteLine($"Elements index is:{i}= {number[i]}");
             //}
 
+
             //input from user
             //int[] mark = new int[5];
             //Console.WriteLine("Enter Marks:"); 
@@ -32,12 +33,21 @@ namespace C_Sharp_Programs
             //    Console.WriteLine($"Marks for subject {i+1}: {mark[i]}");
             //}
 
+
+
             //String
-            string[] name = { "riya", "radha", "siya", "prisha" };
-            Console.WriteLine("Names in array:");
-            foreach(string i in name)
+            //string[] name = { "riya", "radha", "siya", "prisha" };
+            //Console.WriteLine("Names in array:");
+            //foreach(string i in name)
+            //{
+            //    Console.WriteLine(i);
+            //}
+
+            object[] obj = { "vaishna", 106, 99.99, true };
+            Console.WriteLine("mixed array:");
+            for(int i=0;i<obj.Length; i++)
             {
-                Console.WriteLine(i);
+                Console.WriteLine(obj[i]);
             }
 
             Console.ReadLine();
