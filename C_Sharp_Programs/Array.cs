@@ -18,19 +18,28 @@ namespace C_Sharp_Programs
             //}
 
             //input from user
-            int[] mark = new int[5];
-            Console.WriteLine("Enter Marks:"); 
-            for(int i=0;i<mark.Length;i++)
-            {
-                Console.WriteLine($"Enter mark for subject {i+1}:");
-                mark[i]=int.Parse(Console.ReadLine());
-            }
-            Console.WriteLine("Enterd Marks:");
+            //int[] mark = new int[5];
+            //Console.WriteLine("Enter Marks:"); 
+            //for(int i=0;i<mark.Length;i++)
+            //{
+            //    Console.WriteLine($"Enter mark for subject {i+1}:");
+            //    mark[i]=int.Parse(Console.ReadLine());
+            //}
+            //Console.WriteLine("Enterd Marks:");
 
-            for (int i=0;i<mark.Length;i++)
+            //for (int i=0;i<mark.Length;i++)
+            //{
+            //    Console.WriteLine($"Marks for subject {i+1}: {mark[i]}");
+            //}
+
+            //String
+            string[] name = { "riya", "radha", "siya", "prisha" };
+            Console.WriteLine("Names in array:");
+            foreach(string i in name)
             {
-                Console.WriteLine($"Marks for subject {i+1}: {mark[i]}");
+                Console.WriteLine(i);
             }
+
             Console.ReadLine();
         }
         
