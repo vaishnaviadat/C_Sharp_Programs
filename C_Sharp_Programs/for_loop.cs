@@ -11,7 +11,7 @@ namespace C_Sharp_Programs
         static void Main(string[] args)
         {
             // For Loop
-            //int sum1 = 0;
+            //int sum1;
             //Console.WriteLine("............for loop..........");
 
             //for (int i = 1; i <= 10; i++)
