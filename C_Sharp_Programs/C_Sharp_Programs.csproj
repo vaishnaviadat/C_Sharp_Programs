@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>C_Sharp_Programs.Switch_Case</StartupObject>
+    <StartupObject>C_Sharp_Programs.Copy_COnstructor</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -46,13 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Array.cs" />
+    <Compile Include="Constructor_Overloading.cs" />
+    <Compile Include="Constructor_types.cs" />
+    <Compile Include="Copy_COnstructor.cs" />
     <Compile Include="Data_Types.cs" />
+    <Compile Include="function_types.cs" />
+    <Compile Include="HW.cs" />
     <Compile Include="if_else.cs" />
     <Compile Include="if_elseif.cs" />
+    <Compile Include="for_loop.cs" />
+    <Compile Include="Methods or Functions.cs" />
     <Compile Include="Operators_with_user_input.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rfpagecs.cs" />
+    <Compile Include="Rf_Page.cs" />
     <Compile Include="Switch_Case.cs" />
+    <Compile Include="while_loop_and_do_while_loop.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

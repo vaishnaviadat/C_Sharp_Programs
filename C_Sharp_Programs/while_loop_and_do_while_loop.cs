@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace C_Sharp_Programs
 {
-    internal class while_loop
+    internal class while_loop_and_do_while_loop
     {
         static void Main(string[] args)
         {
+     //while loop
             //print 1 to 5 number
             //int num1 = 1;
             //while(num1<=5)
@@ -45,7 +46,7 @@ namespace C_Sharp_Programs
             //}
             //Console.WriteLine("Reverse number is="+sum);
 
-            // Do While Loop
+     // Do While Loop
             //int i = 1;
             //do
             //{
