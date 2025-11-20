@@ -8,31 +8,31 @@ namespace C_Sharp_Programs
 {
     class device
     {
-        public virtual void turnon()
+        public virtual void turnon(string name)
         {
-            Console.WriteLine("Device is turned on");
+            Console.WriteLine($"Device name is:{name}");
         }
     }
     class tv:device
     {
-        public override void turnon() 
+        public override void turnon(string name) 
         { 
-            Console.WriteLine("TV is turned on");
+            Console.WriteLine($"TV name is:{name}");
         }
     }
     class AC:device
     {
-        public override void turnon()
+        public override void turnon(string name)
         {
-            Console.WriteLine("AC is turned on");
+            Console.WriteLine($"AC name is:{name}");
 
         }
     }
     class music_system : device
     {
-        public override void turnon()
+        public override void turnon(string name)
         {
-            Console.WriteLine("music is on now");
+            Console.WriteLine($"music name is:{name}");
 
         }
     }
@@ -42,11 +42,11 @@ namespace C_Sharp_Programs
         static void Main(string[] args)
         {
             device d1 = new tv();
-            d1.turnon();
+            d1.turnon("Television");
             device d2 = new AC();
-            d2.turnon();
+            d2.turnon("no. 1");
             device d3 = new music_system();
-            d3.turnon();
+            d3.turnon("samsung");
             Console.ReadLine();
 
         }
