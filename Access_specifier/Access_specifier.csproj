@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Access_specifier.Program1</StartupObject>
+    <StartupObject>Program1</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -48,7 +48,6 @@
   <ItemGroup>
     <Compile Include="Program1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="public_specifier.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
