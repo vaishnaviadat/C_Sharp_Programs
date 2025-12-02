@@ -59,12 +59,29 @@ namespace C_Sharp_Programs
             Console.WriteLine("----------------------------------------");
 
         }
+        static void Example4_SearchingElements()
+        {
+            ArrayList names = new ArrayList() {"Riya","Siya","Prisha","Saisha","Geeta" };
+            Console.WriteLine("Example4:Searching Elements");
+            if(names.Contains("Prisha"))
+            {
+                Console.WriteLine("This name is in our list");
+
+            }
+            else
+            {
+                Console.WriteLine("name not found");
+            }
+                Console.WriteLine("----------------------------------------");
+
+        }
         static void Main(string[] args)
 
         {
             Example1_StoreDifferentDataTypes();
             Example2_RemoveInsertItems();
             Example3_SortingItems();
+            Example4_SearchingElements();
             Console.ReadLine();
 
         }
