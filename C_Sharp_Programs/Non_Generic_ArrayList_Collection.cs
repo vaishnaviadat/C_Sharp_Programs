@@ -31,6 +31,8 @@ namespace C_Sharp_Programs
             fruitsList.Add("Banana");
             fruitsList.Add("Mango");
             fruitsList.Add("Orange");
+            fruitsList.Add("Watermelon");
+            fruitsList.Add("Strawberry");
 
             fruitsList.RemoveAt(2);//remove at index
             fruitsList.Remove("Apple");//remove by value
@@ -43,6 +45,18 @@ namespace C_Sharp_Programs
             }
             Console.WriteLine("----------------------------------------");
 
+     }
+        static void Example3_SortingItems()
+        {
+            ArrayList numbers= new ArrayList() { 20,11,19,15,18,22};
+            numbers.Sort();
+            Console.WriteLine("Example3:Sorting number");
+            foreach (var i in numbers)
+            {
+                Console.WriteLine(i);
+
+            }
+            Console.WriteLine("----------------------------------------");
 
         }
         static void Main(string[] args)
@@ -50,6 +64,7 @@ namespace C_Sharp_Programs
         {
             Example1_StoreDifferentDataTypes();
             Example2_RemoveInsertItems();
+            Example3_SortingItems();
             Console.ReadLine();
 
         }
