@@ -98,7 +98,7 @@ namespace C_Sharp_Programs
         {
             ArrayList numbers1 = new ArrayList() { 1,2,3,4,5,6,7,8 };
             numbers1.Reverse();
-            Console.WriteLine("Example3:Reverse number");
+            Console.WriteLine("Example6:Reverse number");
             foreach (var i in numbers1)
             {
                 Console.WriteLine(i);
@@ -109,8 +109,10 @@ namespace C_Sharp_Programs
         }
         static void Example7_UsingObject()
         {
+            Console.WriteLine("Example7:Using Object");
+
             ArrayList students = new ArrayList();
-            students.Add(new student{ name = "Prisha", age = 7 });
+            students.Add(new student{ name = "Prisha", age = 5 });
             students.Add(new student { name = "Saisha", age = 2 });
 
             {
@@ -118,7 +120,42 @@ namespace C_Sharp_Programs
                 {
                     Console.WriteLine(s1.name+":"+s1.age);
                 }
+                Console.WriteLine("----------------------------------------");
+
             }
+        }
+        static void Example8_AddRange()
+        {
+            ArrayList list = new ArrayList();
+            ArrayList range = new ArrayList() {21,22,23,24,25,26,22 };//Adds multiple items together.
+            list.AddRange(range);
+            Console.WriteLine("Example8:Add Range");
+            foreach (var i in list)
+            {
+                Console.WriteLine(i);
+
+            }
+            Console.WriteLine("----------------------------------------");
+
+            list.RemoveRange(1,2);//removes 2 items starting from  index 1
+            Console.WriteLine("Example8:Remove Range");
+            foreach (var i in list)
+            {
+                Console.WriteLine(i);
+
+            }
+            Console.WriteLine("----------------------------------------");
+
+
+            list.IndexOf(24);//Returns the index of the give number.
+            Console.WriteLine("Example8:IndexOf");
+            Console.WriteLine("Index of 24 is:" + list.IndexOf(24));
+            Console.WriteLine("----------------------------------------");
+
+            list.LastIndexOf(22);//Returns the last index of number that If an item is present multiple times,
+            Console.WriteLine("Example8:LastIndexOf");
+            Console.WriteLine("Index of 22 is:" + list.LastIndexOf(22));
+            Console.WriteLine("----------------------------------------");
         }
         static void Main(string[] args)
 
@@ -130,6 +167,7 @@ namespace C_Sharp_Programs
             Example5_CopyToArray();
             Example6_ReverseArray();
             Example7_UsingObject();
+            Example8_AddRange();
             Console.ReadLine();
 
         }
