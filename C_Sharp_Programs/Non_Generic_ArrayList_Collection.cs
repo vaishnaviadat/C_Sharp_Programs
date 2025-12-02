@@ -126,10 +126,10 @@ namespace C_Sharp_Programs
         }
         static void Example8_AddRange()
         {
-            ArrayList list = new ArrayList();
+            ArrayList list = new ArrayList() { "Ram", "Neha" };
             ArrayList range = new ArrayList() {21,22,23,24,25,26,22 };//Adds multiple items together.
             list.AddRange(range);
-            Console.WriteLine("Example8:Add Range");
+            Console.WriteLine("Example8:Add Range {21,22,23,24,25,26,22 }");
             foreach (var i in list)
             {
                 Console.WriteLine(i);
