@@ -7,6 +7,11 @@ using System.Threading.Tasks;
 
 namespace C_Sharp_Programs
 {
+    class student
+    {
+        public string name;
+        public int age;
+    }
     internal class Non_Generic_ArrayList_Collection
     {
         static void Example1_StoreDifferentDataTypes()
@@ -75,6 +80,46 @@ namespace C_Sharp_Programs
                 Console.WriteLine("----------------------------------------");
 
         }
+        static void Example5_CopyToArray()
+        {
+            Console.WriteLine("Example5:CopyArray");
+
+            ArrayList cities = new ArrayList() { "Jaipur", "Chennai", "Solapur", "Indore", "Chennai" };
+            string[] cityArray = new string[cities.Count];
+            cities.CopyTo(cityArray);
+            foreach (var c in cityArray) 
+            {
+                Console.WriteLine($"{c}");
+            }
+            Console.WriteLine("----------------------------------------");
+
+        }
+        static void Example6_ReverseArray()
+        {
+            ArrayList numbers1 = new ArrayList() { 1,2,3,4,5,6,7,8 };
+            numbers1.Reverse();
+            Console.WriteLine("Example3:Reverse number");
+            foreach (var i in numbers1)
+            {
+                Console.WriteLine(i);
+
+            }
+            Console.WriteLine("----------------------------------------");
+
+        }
+        static void Example7_UsingObject()
+        {
+            ArrayList students = new ArrayList();
+            students.Add(new student{ name = "Prisha", age = 7 });
+            students.Add(new student { name = "Saisha", age = 2 });
+
+            {
+                foreach (student s1  in students)
+                {
+                    Console.WriteLine(s1.name+":"+s1.age);
+                }
+            }
+        }
         static void Main(string[] args)
 
         {
@@ -82,6 +127,9 @@ namespace C_Sharp_Programs
             Example2_RemoveInsertItems();
             Example3_SortingItems();
             Example4_SearchingElements();
+            Example5_CopyToArray();
+            Example6_ReverseArray();
+            Example7_UsingObject();
             Console.ReadLine();
 
         }
