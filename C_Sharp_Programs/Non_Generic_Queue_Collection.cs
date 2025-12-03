@@ -33,6 +33,8 @@ namespace C_Sharp_Programs
             Console.WriteLine("Count is:" + q1.Count);
 
             Console.WriteLine("---------------------");
+            q1.Peek();
+            Console.WriteLine("Peek element is:" + q1.Peek());
 
             Console.ReadLine();
         }
