@@ -58,6 +58,9 @@ namespace C_Sharp_Programs
             {
                 Console.WriteLine("Product value does not exist.");
             }
+            products.Remove(104);
+            displayProducts(products);
+
             Console.ReadLine();
         }
     }
