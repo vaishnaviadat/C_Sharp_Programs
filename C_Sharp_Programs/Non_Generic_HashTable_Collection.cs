@@ -61,6 +61,9 @@ namespace C_Sharp_Programs
             products.Remove(104);
             displayProducts(products);
 
+            products.Clear();
+            Console.WriteLine($"\n Total Products:{products.Count}");
+
             Console.ReadLine();
         }
     }
