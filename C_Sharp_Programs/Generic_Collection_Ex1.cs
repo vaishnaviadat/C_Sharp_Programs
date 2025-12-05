@@ -43,6 +43,10 @@ namespace C_Sharp_Programs
             citylist.Remove("Mumbai");
             printcitylist(citylist);
 
+            Console.WriteLine("-----------RemoveAt City------------");
+            citylist.RemoveAt(5);
+            printcitylist(citylist);
+
             Console.ReadLine();
         }
     }
