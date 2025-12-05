@@ -35,6 +35,11 @@ namespace C_Sharp_Programs
             citylist.Insert(2, "Berlin");//insert value at index 2
             printcitylist(citylist);
 
+            Console.WriteLine("Insert Range");
+            citylist.InsertRange(1,new List<string> {"Solapur","Akluj","Velapur"});  
+            printcitylist(citylist);
+
+
             Console.ReadLine();
         }
     }
