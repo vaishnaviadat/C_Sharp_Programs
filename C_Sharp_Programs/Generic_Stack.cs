@@ -25,9 +25,35 @@ namespace C_Sharp_Programs
             stack.Push(105);
             stack.Push(106);
             Console.WriteLine("Stack elements:");
-
             printnumbers(stack);
             Console.WriteLine();
+
+            Console.WriteLine("Pop element: " + stack.Pop());
+            Console.WriteLine();
+
+            Console.WriteLine("Stack elements after pop:");
+            printnumbers(stack);
+            Console.WriteLine();
+
+            Console.WriteLine("Peek element: " + stack.Peek());
+            Console.WriteLine();
+
+            Console.WriteLine("Stack elements after peek:");
+            printnumbers(stack);
+            Console.WriteLine();
+
+            Console.WriteLine("----------Contains---------");
+            Console.WriteLine("Contains 106: " + stack.Contains(106));
+            Console.WriteLine();
+
+            Console.WriteLine("----------Count----------");
+            Console.WriteLine("Total Count: " + stack.Count);
+            Console.WriteLine();
+
+            Console.WriteLine("---------Clear elements----------");
+            stack.Clear();
+            printnumbers(stack);
+            Console.WriteLine("Cleared......");
             Console.ReadLine();
         }
     }
