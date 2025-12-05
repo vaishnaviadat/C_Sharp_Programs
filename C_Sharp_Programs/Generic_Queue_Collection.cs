@@ -8,7 +8,7 @@ namespace C_Sharp_Programs
 {
     internal class Generic_Queue_Collection
     {
-        static void printnames(Queue<string>names)
+        static void printnames(Queue<string> names)
         {
             foreach (var i in names)
             {
@@ -29,14 +29,32 @@ namespace C_Sharp_Programs
             Console.WriteLine();
 
             Console.WriteLine("-----------Dequeue Elements----------");
-            Console.WriteLine("Dequeue element is: "+q1.Dequeue());
+            Console.WriteLine("Dequeue element is: " + q1.Dequeue());
             Console.WriteLine();
             Console.WriteLine("-------Queue Elements After Dequeue------");
             printnames(q1);
-            Console.WriteLine() ;
+            Console.WriteLine();
 
             Console.WriteLine("----------Peek Elements---------");
             Console.WriteLine("Peek element is: " + q1.Peek());
+            Console.WriteLine();
+
+
+            Console.WriteLine("-----------Count-----------");
+            Console.WriteLine("Count is:" + q1.Count());
+            Console.WriteLine();
+
+            Console.WriteLine("----------Contains---------");
+            Console.WriteLine("Contains 'Siya': " + q1.Contains("Siya"));
+            Console.WriteLine();
+
+            Console.WriteLine("----------ToArray---------");
+            string[] array = q1.ToArray();
+            Console.WriteLine("Array elements:");
+            foreach (string i in array)
+            {
+                Console.WriteLine(i);
+            }
             Console.WriteLine();
 
             Console.WriteLine("-----------Clear-----------");
@@ -45,9 +63,11 @@ namespace C_Sharp_Programs
             Console.WriteLine("Cleared Elements");
             Console.WriteLine();
 
+
             Console.WriteLine("-----------Count-----------");
-            Console.WriteLine("Count is:"+q1.Count());
+            Console.WriteLine("Count is:" + q1.Count());
             Console.WriteLine();
+
             Console.ReadLine();
         }
     }
