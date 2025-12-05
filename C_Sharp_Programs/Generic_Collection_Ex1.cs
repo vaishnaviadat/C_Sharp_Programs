@@ -47,6 +47,9 @@ namespace C_Sharp_Programs
             citylist.RemoveAt(5);
             printcitylist(citylist);
 
+            Console.WriteLine("-----------Remove Range Index to Index------------");
+            citylist.RemoveRange(3,5);
+            printcitylist(citylist);
             Console.ReadLine();
         }
     }
