@@ -39,6 +39,9 @@ namespace C_Sharp_Programs
             citylist.InsertRange(1,new List<string> {"Solapur","Akluj","Velapur"});  
             printcitylist(citylist);
 
+            Console.WriteLine("-----------Remove City------------");
+            citylist.Remove("Mumbai");
+            printcitylist(citylist);
 
             Console.ReadLine();
         }
