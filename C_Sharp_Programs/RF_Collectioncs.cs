@@ -24,11 +24,19 @@ namespace C_Sharp_Programs
         //    }
         //}
 
-        static void printqueue(Queue q1)
+        //static void printqueue(Queue q1)
+        //{
+        //    foreach(var i in q1)
+        //    {
+        //        Console.WriteLine(i);
+        //    }
+        //}
+
+        static void printhashtable(Hashtable ht)
         {
-            foreach(var i in q1)
+            foreach(DictionaryEntry de in ht)
             {
-                Console.WriteLine(i);
+                Console.WriteLine("Key: " + de.Key + ", Value: " + de.Value);
             }
         }
         static void Main(string[]args)
@@ -117,36 +125,68 @@ namespace C_Sharp_Programs
             //Console.WriteLine("Contains 200: " + s1.Contains(200));
             //Console.WriteLine();
 
-            
+
             //Queue
-            Queue q1= new Queue();
-            q1.Enqueue(100);
-            q1.Enqueue("Vaishna");
-            q1.Enqueue(200);
-            q1.Enqueue(300);
 
-            Console.WriteLine("----Queue Elements:----");
-            printqueue(q1);
+            //Queue q1= new Queue();
+            //q1.Enqueue(100);
+            //q1.Enqueue("Vaishna");
+            //q1.Enqueue(200);
+            //q1.Enqueue(300);
+
+            //Console.WriteLine("----Queue Elements:----");
+            //printqueue(q1);
+            //Console.WriteLine();
+
+            //Console.WriteLine("----Queue elements after Dequeue----");
+            //Console.WriteLine("Dequeue element is: " + q1.Dequeue());
+            //Console.WriteLine();
+
+            //Console.WriteLine("----Queue elements after Peek----");
+            //Console.WriteLine("Peek element is: " + q1.Peek());
+            //Console.WriteLine();
+
+            //Console.WriteLine("-----Queue Count------");
+            //Console.WriteLine("Count is: " + q1.Count);
+            //Console.WriteLine();
+
+            //Console.WriteLine("-----Queue Contains------");
+            //Console.WriteLine("Contains 200: " + q1.Contains(200));
+            //Console.WriteLine();
+
+            //HashTable
+
+            Hashtable ht = new Hashtable();
+            ht.Add(1, "Vaishna");
+            ht.Add(2, 100);
+            ht.Add(3, "Adat");
+            ht.Add(4, 200);
+            ht.Add(5,"neha");
+
+            Console.WriteLine("----Hashtable Elements:----");
+            printhashtable(ht);
             Console.WriteLine();
 
-            Console.WriteLine("----Queue elements after Dequeue----");
-            Console.WriteLine("Dequeue element is: " + q1.Dequeue());
+            Console.WriteLine("----Hashtable elements after removing key 3----");
+            ht.Remove(3);
             Console.WriteLine();
 
-            Console.WriteLine("----Queue elements after Peek----");
-            Console.WriteLine("Peek element is: " + q1.Peek());
+            Console.WriteLine("----Hashtable Elements after removing value 200:----");
+            Console.WriteLine("Contains value 200: " + ht.ContainsValue(200));
             Console.WriteLine();
 
-            Console.WriteLine("-----Queue Count------");
-            Console.WriteLine("Count is: " + q1.Count);
+            Console.WriteLine("-----Hashtable Count------");
+            Console.WriteLine("Count is: " + ht.Count);
             Console.WriteLine();
 
-            Console.WriteLine("-----Queue Contains------");
-            Console.WriteLine("Contains 200: " + q1.Contains(200));
+            Console.WriteLine("-----Hashtable Contains Key------");
+            Console.WriteLine("Contains key 2: " + ht.ContainsKey(2));
             Console.WriteLine();
 
-
-
+            Console.WriteLine("-----Hashtable Clear------");
+            ht.Clear();
+            printhashtable(ht);
+            Console.WriteLine("........");
             Console.ReadLine();
 
         }
