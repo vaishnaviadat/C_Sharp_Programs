@@ -24,6 +24,8 @@ namespace C_Sharp_Programs
             products.Add(104, "Monitor");
             products.Add(105, "Keyboard");
             products.Add(106, "Mouse");
+            products.Add(106, "Mouse");
+
             Console.WriteLine("----------Product List-----------");// hashtable display data in any order
 
             displayProducts(products);
