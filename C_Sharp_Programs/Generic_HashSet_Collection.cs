@@ -28,6 +28,11 @@ namespace C_Sharp_Programs
             Console.WriteLine("Was 'Apple' added again? " + added);
             Console.WriteLine("----------Fruit List-----------");
             printfruits(fruits);
+            Console.WriteLine();
+
+            Console.WriteLine("-----------Contains Fruit------------");
+            Console.WriteLine("Contains 'Mango': " + fruits.Contains("Mango"));//Check Mango is present or not
+            Console.WriteLine();
             Console.ReadLine();
         }
     }
