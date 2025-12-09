@@ -23,7 +23,9 @@ namespace C_Sharp_Programs
             fruits.Add("Mango");
             fruits.Add("Orange");
             fruits.Add("Grapes");
-            fruits.Add("Apple"); // Duplicate, will not be added
+            fruits.Add("Apple"); // Duplicate,value  will not be added
+            bool added= fruits.Add("Apple");
+            Console.WriteLine("Was 'Apple' added again? " + added);
             Console.WriteLine("----------Fruit List-----------");
             printfruits(fruits);
             Console.ReadLine();
