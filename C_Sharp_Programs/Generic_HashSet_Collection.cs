@@ -21,7 +21,6 @@ namespace C_Sharp_Programs
             fruits.Add("Apple");
             fruits.Add("Banana");
             fruits.Add("Mango");
-            fruits.Add("Orange");
             fruits.Add("Grapes");
             fruits.Add("Apple"); // Duplicate,value  will not be added
             bool added= fruits.Add("Apple");
@@ -32,6 +31,28 @@ namespace C_Sharp_Programs
 
             Console.WriteLine("-----------Contains Fruit------------");
             Console.WriteLine("Contains 'Mango': " + fruits.Contains("Mango"));//Check Mango is present or not
+            Console.WriteLine("Contains 'Orange': " + fruits.Contains("Orange"));
+            Console.WriteLine();
+
+            HashSet<string> Newfruits = new HashSet<string>() 
+            { "Mango", "Pineapple", "Papaya" };
+            Console.WriteLine("----------New Fruit List-----------");
+            printfruits(Newfruits);
+            Console.WriteLine();
+
+            Console.WriteLine("-----------Union With  Newfruits------------");
+            fruits.UnionWith(Newfruits);//Add Newfruits to fruits
+            printfruits(fruits);
+            Console.WriteLine();
+
+            HashSet<string> SeasonFruits = new HashSet<string>() 
+            {  "Watermelon", "Cheery", "Banana" };
+            Console.WriteLine("----------Season Fruit List-----------");
+            printfruits(SeasonFruits);
+            Console.WriteLine();
+            Console.WriteLine("-----------Intersect With  SeasonFruits------------");
+            fruits.IntersectWith(SeasonFruits);//Keep only elements present in both sets
+            printfruits(fruits);
             Console.WriteLine();
             Console.ReadLine();
         }
