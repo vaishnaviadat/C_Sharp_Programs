@@ -13,11 +13,11 @@ namespace C_Sharp_Programs
         private double balance;
         public void createaccount()
         {
-            Console.WriteLine("Enter account holder name:" + accountholder_name);
+            Console.Write("Enter account holder name:" + accountholder_name);
             accountholder_name = Console.ReadLine();
-            Console.WriteLine("Enter account number:");
+            Console.Write("Enter account number:");
             accountnumber = Console.ReadLine();
-            Console.WriteLine("Enter opening balance:");
+            Console.Write("Enter opening balance:");
             balance=Convert.ToDouble(Console.ReadLine());
         }
         public void deposit()
