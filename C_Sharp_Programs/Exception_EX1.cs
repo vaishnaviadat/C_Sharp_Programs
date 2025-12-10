@@ -9,20 +9,21 @@ namespace C_Sharp_Programs
     internal class Exception_EX1
     {
         static void Main(string[]args)
-        {
-            Console.WriteLine("Enter first number:");
-            int num1 = Convert.ToInt32(Console.ReadLine());
-
-            Console.WriteLine("Enter second number:");
-            int num2 = Convert.ToInt32(Console.ReadLine());
-
-            try
+        {   
+          try
             {
+                Console.Write("Enter first number:");
+                int num1 = Convert.ToInt32(Console.ReadLine());
+
+                Console.Write("Enter second number:");
+                int num2 = Convert.ToInt32(Console.ReadLine());
+                
                 int result = num1 / num2;
+                Console.WriteLine("Division is: " + result);
             }
             catch (Exception e)
             {
-                Console.WriteLine(e.ToString());
+                Console.WriteLine("Some Error occured:"+e.Message);
             }
             finally
             {
