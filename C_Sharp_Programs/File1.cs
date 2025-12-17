@@ -10,15 +10,30 @@ namespace C_Sharp_Programs
     {
         static void Main(string[] args)
         {
-            string path= @"C:\File\f1.txt";//verbatim string literal
-            string path1 = @"C:\File\f3.txt";//verbatim string literal
+            //------------File Exits or not-------------------
+            //string path= @"C:\File\f1.txt";//verbatim string literal
+            //string path1 = @"C:\File\f3.txt";//verbatim string literal
 
-            if (File.Exists(path1))
+            //if (File.Exists(path1))
+            //{
+            //    Console.WriteLine("File Exists");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("File does not Exists");
+            //}
+//---------------------------------------------------------------------------------------------------------------------------//
+            
+            //------------File Read All data from text file-------------------
+            //string path = @"C:\File\f1.txt";//verbatim string literal
+            string path = @"C:\File\f2.txt";//verbatim string literal
+            if (File.Exists(path))
             {
                 Console.WriteLine("File Exists");
+                string data = File.ReadAllText(path);
+                Console.WriteLine("-----Data from file is---------\n" + data);
             }
-            else
-            {
+            else {
                 Console.WriteLine("File does not Exists");
             }
             Console.ReadLine();
